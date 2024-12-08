@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<records>
+    <student>
+        <rollno>101</rollno>
+        <personal-info>
+            <name>Charan</name>
+            <age>19</age>
+        </personal-info>
+        <dept>cse</dept>
+        <year>3</year>
+    </student>
+    <student>
+        <rollno>102</rollno>
+        <personal-info>
+            <name>aadi</name>
+            <age>19</age>
+        </personal-info>
+        <dept>mech</dept>
+        <year>3</year>
+    </student>
+</records>

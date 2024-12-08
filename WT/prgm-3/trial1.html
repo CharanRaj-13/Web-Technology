@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Open and Close Window</title>
+        <script>
+            var newWindow; // Declared in the global scope
+            function openWindow() {
+                newWindow = window.open("https://www.google.com", "_blank", "width=400,height=450");
+            }
+            function closeWindow() {
+                if (newWindow && !newWindow.closed) {
+                    newWindow.close();
+                } else {
+                    alert("The window is already closed or was not opened!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="openWindow()">Open</button>
+        <button onclick="closeWindow()">Close</button>
+    </body>
+</html>

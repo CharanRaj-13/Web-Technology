@@ -1,0 +1,16 @@
+*{
+    background-color: black;
+}
+h1{
+    color: bisque;
+    text-align: center;
+}
+p{
+    color: burlywood;
+}
+.division1{
+    text-align: right;
+}
+.division1 p{
+    color: chartreuse;
+}

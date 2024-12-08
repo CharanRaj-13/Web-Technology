@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Open Window</title>
+        <script>
+            var Window;
+            function WindowOpen(){
+                Window = window.open("https://www.google.com", "_blank", "width=400", "height=450");
+            }
+            function WindowClose(){
+                Window.close();
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="WindowOpen()">Open</button>
+        <button onclick="WindowClose()">Close</button>
+    </body>
+</html>

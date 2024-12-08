@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Method</title>
+        <style>
+            *{
+                text-align: center;
+                background-color:whitesmoke ;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Javascript String Methods</h1><br><br>
+        <p><b>Length</b> method returns the length of the string</p>
+        <button onclick="myFunction()"><b>Length Method</b></button>
+        <p id="demo"></p>
+        <script>
+            let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            document.getElementById("demo").innerHTML = str;
+            function myFunction(){
+                document.getElementById("demo").innerHTML = str.length;
+            }
+        </script>
+
+        <h2>Javascript Slicing</h2>
+        <p><b>Slice</b> method returns a extracted part of a string</p>
+        <button onclick="myFunction1()"><b><i>Slice Method</i></b></button>
+        <p id="demo1"></p>
+        <script>
+            let str1 = "Apple, Banana, kiwi";
+            document.getElementById("demo1").innerHTML = str1;
+            function myFunction1(){
+                document.getElementById("demo1").innerHTML = str1.slice(6,13);
+            }
+        </script>
+
+        <h2>Javascript Substring</h2>
+        <p><b>Substring</b> method extracts a part of string and returns extracted sting in a new string</p>
+        <button onclick="myFunction2()"><b><i>Substring Method</i></b></button>
+        <p id="demo2"></p>
+        <script>
+            document.getElementById("demo2").innerHTML = str1;
+            function myFunction2(){
+                document.getElementById("demo2").innerHTML = str1.substring(15,19);
+            }
+        </script>
+
+        <h2>Javascript String Replace</h2>
+        <p><b>Replace</b> method replaces a string with another string</p>
+        <p id="demo3">Visit MICROSOFT</p>
+        <button onclick="myFunction3()"><b><i>Replace Method</i></b></button>
+        <script>
+            function myFunction3(){
+                let text = document.getElementById("demo3").innerHTML;
+                document.getElementById("demo3").innerHTML = text.replace("MICROSOFT", "SRMVEC");
+            }
+        </script>
+
+        <h2>Javascript UpperCase</h2>
+        <p><b>UpperCase</b> method turns the lowercase to uppercase letter</p>
+        <p id="demo4">Hello world</p>
+        <button onclick="myFunction4()"><b><i>UpperCase</i></b></button>
+        <script>
+            let text1 = document.getElementById("demo4").innerHTML;
+            document.getElementById("demo4").innerHTML = text1;
+            function myFunction4(){
+                document.getElementById("demo4").innerHTML = text1.toUpperCase();
+            }
+        </script>
+
+        <h2>Javascript LowerCase</h2>
+        <p><b>LowerCase</b> method turns the uppercase to lowercase letter</p>
+        <p id="demo5">HELLO WORLD</p>
+        <button onclick="myFunction5()"><b><i>LowerCase</i></b></button>
+        <script>
+            let text2 = document.getElementById("demo5").innerHTML;
+            document.getElementById("demo5").innerHTML = text2;
+            function myFunction5(){
+                document.getElementById("demo5").innerHTML = text2.toLowerCase();
+            }
+        </script>
+
+
+        <h1>Javaascript Math Method</h1><br><br>
+
+        
+        <h2>Javascript Round</h2>
+        <p><b>Round</b> method rounds off a number to its nearest value. EG: 4.4</p>
+        <p id="demo6"></p>
+        <button onclick="myFunction6()"><b><i>Round Method</i></b></button>
+        <script>
+            function myFunction6(){
+                document.getElementById("demo6").innerHTML = Math.round(4.4);
+            }
+        </script>
+
+        <h2>Javascript Ceil</h2>
+        <p><b>Ceil</b> method rounds off a number to its nearest integer. EG: 4.4</p>
+        <p id="demo7"></p>
+        <button onclick="myFunction7()"><b><i>Ceil Method</i></b></button>
+        <script>
+            function myFunction7(){
+                document.getElementById("demo7").innerHTML = Math.ceil(4.4);
+            }
+        </script>
+
+        <h2>Javascript Power</h2>
+        <p><b>Power</b> method returns the x power y. EG: 4<sup>2</sup></p>
+        <p id="demo8"></p>
+        <button onclick="myFunction8()"><b><i>Power Method</i></b></button>
+        <script>
+            function myFunction8(){
+                document.getElementById("demo8").innerHTML = Math.pow(4,2);
+            }
+        </script>
+
+        <h2>Javascript Squareroot</h2>
+        <p><b>Squareroot</b> method returns the Squareroot of a number. EG: 64</p>
+        <p id="demo9"></p>
+        <button onclick="myFunction9()"><b><i>Squareroot Method</i></b></button>
+        <script>
+            function myFunction9(){
+                document.getElementById("demo9").innerHTML = Math.sqrt(64);
+            }
+        </script>
+
+        <h2>Javascript Minimum</h2>
+        <p><b>Minimum</b> method returns the minimum value EG: [100,150,3,-2,50]</p>
+        <p id="demo10"></p>
+        <button onclick="myFunction10()"><b><i>Minimum Method</i></b></button>
+        <script>
+            function myFunction10(){
+                document.getElementById("demo10").innerHTML = Math.min(100,150,3,-2,50);
+            }
+        </script>
+
+        <h2>Javascript Maximum</h2>
+        <p><b>Maximum</b> method returns the maximum value EG: [100,150,3,-2,50]</p>
+        <p id="demo11"></p>
+        <button onclick="myFunction11()"><b><i>Maximum Method</i></b></button>
+        <script>
+            function myFunction11(){
+                document.getElementById("demo11").innerHTML = Math.max(100,150,3,-2,50);
+            }
+        </script>
+    </body>
+</html>

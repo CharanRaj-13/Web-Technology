@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration <Form></Form></title>
+        <script type="text/javascript">
+            function validate(){
+                if(document.signup.fname.value == ""){
+                    alert("Please Enter First Name");
+                    return false;
+                }
+                if(document.signup.lname.value == ""){
+                    alert("Please Enter Last Name");
+                    return false;
+                }
+                if(document.signup.uname.value == ""){
+                    alert("Please Enter Username");
+                    return false;
+                }
+                if(document.signup.passwd.value == ""){
+                    alert("Please Enter Password");
+                    return false;
+                }
+                if(document.signup.passwd.value<6){
+                    alert("Enter Password More than 6 characters");
+                    return false;
+                }
+                if(document.signup.cpasswd.value == ""){
+                    alert("Enter your Confirmation Password");
+                    return false;
+                }
+                if(document.signup.cpasswd.value != document.signup.passwd.value){
+                    alert("Password Doesn't Match");
+                    return flase;
+                }
+                alert("Details Entered Successfully");
+                display();
+
+                function display(){
+                        document.writeln("Details Entered");
+                        document.writeln("First Name : "+ document.signup.fname.value);
+                        document.writeln("Last Name : "+ document.signup.lname.value);
+                        document.writeln("Country : "+ document.signup.country.value);
+                        document.writeln("User Name : "+ document.signup.uname.value);
+                        document.writeln("Alternate Email : "+ document.signup.aemail.value);
+
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Registration Form</h1>
+        <form name="signup" onsubmit="return validate()">            
+            <p>*First Name : <input type="text" name="fname"> *Last Name : <input type="text" name="lname"></p><br>
+            <p>*UserName : <input type="text" name="uname">@gmail.com</p>
+            <p>*Password : <input type="password" name="passwd"></p>
+            <p>*Confirm Password : <input type="password" name="cpasswd"></p>
+            <p>*Gender : <input type="radio" name="gen" value="male">Male<input type="radio" name="gen" value="female">Female</p>
+            <p>*Select Country : <select name="country">
+                <option selected>Select Option</option>
+                <option>India</option>
+                <option>China</option>
+                <option>Russia</option>
+                <option>America</option>
+            </p>
+            <p>Languages Know : 
+                <input type="checkbox" name="lang" value="English">English
+                <input type="checkbox" name="lang" value="Tamil">Tamil
+                <input type="checkbox" name="lang" value="Chineese">Chineese
+            </p>
+            <p>*Alternate Email : <input type="text" name="aemail">@gmail.com</p>
+            <p align="center"><input type="checkbox" name="agree">I Agree to Terms & Conditions</p>
+            <p align="center"><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+        </form>
+    </body>
+</html>
+
+

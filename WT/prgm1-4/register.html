@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body bgcolor="#OOFFFF">
+        <h2><u>Student Registration Form</u></h2>
+        <form action="thankyou.html" name="f" method="post" >
+            <table width="200px" border="1">
+                <tr>
+                    <th>First Name: </th>
+                    <td><input type="text" name="id1" id="id1" size="30" maxlength="20"/></td>
+                </tr>
+                <tr>
+                    <th>Last Name: </th>
+                    <td><input type="text" name="id2" id="id2" size="30" maxlength="20"></td>
+                </tr>
+                <tr>
+                    <th>Email Id: </th>
+                    <td><input type="text" name="id3" id="id3" size="70" maxlength="50"></td>
+                </tr>
+                <tr>
+                    <th>Password: </th>
+                    <td><input type="password" name="id4" id="id4" size="50" maxlenght="12"></td>
+                </tr>
+                <tr>
+                    <th>Phone Number: </th>
+                    <td><input type="text" name="id5" id="id5" size="50" maxlength="11"></td>
+                </tr>
+                <tr>
+                    <th>Address: </th>
+                    <td><textarea cols="50" rows=6 name="addr"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Gender: </th>
+                    <td><b>Male</b><input type="radio" name="gender" id="id6" value="male">
+                        <b>Female</b><input type="radio" name="gender" id="id6" value="female">
+                    </td> 
+                </tr>
+                <tr>
+                    <th>DOB: </th>
+                    <td><input type="text" name="dob"></td>
+                </tr>
+                <tr>
+                    <th>Qualification</th>
+                    <td><b>SSLC</b><input type="checkbox" name="a1" id=a1>
+                        <b>Percentage</b><input type="text" name="id7" id="id7" size=5><br>
+                        <b>HSC</b><input type="checkbox" name="a1" id="a1">
+                        <b>Percentage</b><input type="text" name="id8" id="id8" size="5"><br>
+                        <b>BE</b><input type="checkbox" name="a1" id="a1">
+                        <b>Percentage</b><input type="text" name="id8" id="id8" size="5"><br>      
+                    </td>
+                </tr>
+                <tr>
+                    <th>Ecperience: </th>
+                    <td><select name="s1" id="s1" size="1">
+                        <option>0-1 Years</option>
+                        <option>2-4 Years</option>
+                        <option>More the 5 Years</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <th>Upload Photo</th>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <center>
+                            <input type="submit" value="Submit" onclick="alert('Your Application Has Been Submitted')">
+                            <input type="reset" value="Reset" onclick="alert('Your Application Is Not Submitted')"> 
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

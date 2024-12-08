@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Javascript Array and Date Methods
+        </title>
+        <style>
+            *{
+                text-align: center;
+                background-color:whitesmoke ;
+            }
+        </style>
+    </head>
+    <h1>Javascript Array Methods</h1><br><br>
+
+    <h2>Javascript toString()</h2>
+    <p>The toString() method returns array as a comma seperated values</p>
+    <p id="demo"></p>
+    <script>
+        let fruit = ["Banana", "Apple", "Orange", "Kiwi"];
+        let fruit1 = ["Banana", "Apple", "Orange", "Kiwi"];
+        document.getElementById("demo").innerHTML = fruit.toString();
+    </script>
+
+    <h2>Javascript join()</h2>
+    <p>The join() method join array elements to a string</p>
+    <p id="demo1"></p>
+    <script>
+        document.getElementById("demo1").innerHTML = fruit1.join("+");
+    </script>
+
+    <h2>Javascript Pop()</h2>
+    <p>The javascript pop() method removes the last element from the array</p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const fruit2 = ["Banana", "Apple", "Orange", "Kiwi"];
+        document.getElementById("demo2").innerHTML = fruit2;
+        fruit2.pop();
+        document.getElementById("demo3").innerHTML = fruit2;
+    </script>
+
+    <h2>Javascript Push()</h2>
+    <p>The javascript push() method is used to insert a value to an array</p>
+    <p id="demo4"></p>
+    <button onclick="myFunction()">Add <b>Kiwi</b></button>
+    <script>
+        const fruit3 = ["Banana", "Apple", "Orange"];
+        document.getElementById("demo4").innerHTML = fruit3;
+        function myFunction(){
+            fruit3.push("Kiwi");
+            document.getElementById("demo4").innerHTML = fruit3;
+        }
+    </script>
+
+    <h1>Javascript Date Method</h1><br><br>
+
+    <h2>Javascript new Date()</h2>
+    <p>The Date() method is used to create the date</p>
+    <p id="demo5"></p>
+    <script>
+        const d = new Date();
+        document.getElementById("demo5").innerHTML = d;
+    </script>
+
+    <h2>Javascript Date to String</h2>
+    <p> The date can be converted to string</p>
+    <p id="demo6"></p>
+    <script>
+        const d1 = new Date();
+        document.getElementById("demo6").innerHTML = d1.toDateString();
+    </script>
+</html>

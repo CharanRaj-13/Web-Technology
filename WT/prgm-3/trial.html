@@ -1,0 +1,181 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <script type="text/javascript">
+        function validate() {
+            if (document.signup.fname.value == "") {
+                alert("Please Enter First Name!");
+                return false;
+            }
+            if (document.signup.lname.value == "") {
+                alert("Please Enter Last Name!");
+                return false;
+            }
+            if (document.signup.uname.value == "") {
+                alert("Please Enter User Name!");
+                return false;
+            }
+            if (document.signup.pword1.value == "") {
+                alert("Please Enter Password!");
+                return false;
+            }
+            if (document.signup.pword1.value.length < 6) {
+                alert("Please Enter min 6 characters!");
+                return false;
+            }
+            if (document.signup.pword2.value == "") {
+                alert("Please Enter Password Again!");
+                return false;
+            }
+            if (document.signup.pword2.value != document.signup.pword1.value) {
+                alert("Password Mismatch! Re-enter Password!");
+                return false;
+            }
+            alert("Details Entered Successfully");
+            display();
+            return false;
+        }
+
+        function display() {
+            document.writeln('<h2>Details Entered:</h2>');
+            document.writeln('<br>First Name: ' + document.signup.fname.value);
+            document.writeln('<br>Last Name: ' + document.signup.lname.value);
+            document.writeln('<br>User Name: ' + document.signup.uname.value);
+            document.writeln('<br>Country: ' + document.signup.country.value);
+            document.writeln('<br>Alternate Email: ' + document.signup.aemail.value);
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">E-mail</h1>
+    <h2 align="center">New User Signup Form</h2>
+    <form name="signup" onsubmit="return validate()">
+        <p>*First Name: <input type="text" name="fname"></p>
+        <p>*Last Name: <input type="text" name="lname"></p>
+        <p>*User Name: <input type="text" name="uname"> @gmail.com</p>
+        <p>*Password: <input type="password" name="pword1"></p>
+        <p>*Confirm Password: <input type="password" name="pword2"></p>
+        <p>Gender:
+            <input type="radio" name="gen" value="male"> Male
+            <input type="radio" name="gen" value="female"> Female
+        </p>
+        <p>Country:
+            <select name="country">
+                <option selected>Select Country</option>
+                <option value="India">India</option>
+                <option value="Russia">Russia</option>
+                <option value="France">France</option>
+                <option value="Italy">Italy</option>
+            </select>
+        </p>
+        <p>Language Known:<br>
+            <input type="checkbox" name="lang" value="English"> English<br>
+            <input type="checkbox" name="lang" value="Tamil"> Tamil<br>
+            <input type="checkbox" name="lang" value="Hindi"> Hindi<br>
+            <input type="checkbox" name="lang" value="Malayalam"> Malayalam<br>
+        </p>
+        <p>Alternate Email: <input type="text" name="aemail"></p>
+        <p>
+            <input type="checkbox" name="agree"> I Agree to the Terms & Conditions
+        </p>
+        <p align="center">
+            <input type="submit" value="Submit"> <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <script type="text/javascript">
+        function validate() {
+            if (document.signup.fname.value == "") {
+                alert("Please Enter First Name!");
+                return false;
+            }
+            if (document.signup.lname.value == "") {
+                alert("Please Enter Last Name!");
+                return false;
+            }
+            if (document.signup.uname.value == "") {
+                alert("Please Enter User Name!");
+                return false;
+            }
+            if (document.signup.pword1.value == "") {
+                alert("Please Enter Password!");
+                return false;
+            }
+            if (document.signup.pword1.value.length < 6) {
+                alert("Please Enter min 6 characters!");
+                return false;
+            }
+            if (document.signup.pword2.value == "") {
+                alert("Please Enter Password Again!");
+                return false;
+            }
+            if (document.signup.pword2.value != document.signup.pword1.value) {
+                alert("Password Mismatch! Re-enter Password!");
+                return false;
+            }
+            alert("Details Entered Successfully");
+            display();
+            return false; // Prevent form submission for demonstration purposes
+        }
+
+        function display() {
+            const detailsDiv = document.getElementById("details");
+            detailsDiv.innerHTML = `
+                <h2>Details Entered:</h2>
+                <p>First Name: ${document.signup.fname.value}</p>
+                <p>Last Name: ${document.signup.lname.value}</p>
+                <p>User Name: ${document.signup.uname.value}</p>
+                <p>Country: ${document.signup.country.value}</p>
+                <p>Alternate Email: ${document.signup.aemail.value}</p>
+            `;
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">E-mail</h1>
+    <h2 align="center">New User Signup Form</h2>
+    <form name="signup" onsubmit="return validate()">
+        <p>*First Name: <input type="text" name="fname"></p>
+        <p>*Last Name: <input type="text" name="lname"></p>
+        <p>*User Name: <input type="text" name="uname"> @gmail.com</p>
+        <p>*Password: <input type="password" name="pword1"></p>
+        <p>*Confirm Password: <input type="password" name="pword2"></p>
+        <p>Gender:
+            <input type="radio" name="gen" value="male"> Male
+            <input type="radio" name="gen" value="female"> Female
+        </p>
+        <p>Country:
+            <select name="country">
+                <option selected>Select Country</option>
+                <option value="India">India</option>
+                <option value="Russia">Russia</option>
+                <option value="France">France</option>
+                <option value="Italy">Italy</option>
+            </select>
+        </p>
+        <p>Language Known:<br>
+            <input type="checkbox" name="lang" value="English"> English<br>
+            <input type="checkbox" name="lang" value="Tamil"> Tamil<br>
+            <input type="checkbox" name="lang" value="Hindi"> Hindi<br>
+            <input type="checkbox" name="lang" value="Malayalam"> Malayalam<br>
+        </p>
+        <p>Alternate Email: <input type="text" name="aemail"></p>
+        <p>
+            <input type="checkbox" name="agree"> I Agree to the Terms & Conditions
+        </p>
+        <p align="center">
+            <input type="submit" value="Submit"> <input type="reset" value="Reset">
+        </p>
+    </form>
+    <div id="details"></div>
+</body>
+</html>
+

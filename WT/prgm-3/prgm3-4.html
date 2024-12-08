@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Exception Handling</title>
+        <style>
+            *{
+                text-align: center;
+                background-color:whitesmoke ;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exception Handling</h1><br><br><br>
+        <h2>Javascript Try Catch</h2>
+        <p>Enter a number between 5 to 10</p>
+        <input type="text" id="demo">
+        <button onclick="myFunction()"><i>Test Your Input</i></button>
+        <p id="demo1"></p>
+
+        <script>
+            function myFunction(){
+                const message = document.getElementById("demo1");
+                message.innerHTML = " ";
+                let x = document.getElementById('demo').value;
+                try{
+                    if(x==" ") throw "empty";
+                    if(isNaN(x)) throw "Not a number";
+                    x = Number(x);
+                    if(x<5) throw "Too Low";
+                    if(x>10) throw "Too High";
+                }
+                catch(e){
+                    message.innerHTML = "Input is "+ e;
+                }
+            }
+        </script>
+    </body>
+</html>

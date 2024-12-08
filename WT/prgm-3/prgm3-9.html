@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouse Click</title>
+    </head>
+    <body>
+        <button id="btn">Click me with any mouse button</button>
+        <p id="message"></p>
+        <script>
+            let btn = document.querySelector('#btn');
+            btn.addEventListener('contextmenu', (e) => {
+                e.preventDefault();
+            });
+
+            btn.addEventListener('mouseup', (e) =>{
+                let msg = document.querySelector('#message');
+                switch(e.button){
+                    case 0:
+                        msg.textContent = "Left Mouse Button Clicked";
+                        break;
+                    case 1:
+                        msg.textContent = "Middle Mouse Button Clicked";
+                        break;
+                    case 2:
+                        msg.textContent = "Right Mouse Button Clicked";
+                        break;
+                    default:
+                        msg.textContent = "Invalid Mouse Button";
+                }
+            });
+        </script>
+    </body>
+</html>

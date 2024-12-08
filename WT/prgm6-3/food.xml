@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="food_style.xsl"?>
+<foodCollection>
+    <food>
+        <name>Rice</name>
+        <quantity>5 kg</quantity>
+        <donor>John Doe</donor>
+    </food>
+    <food>
+        <name>Beans</name>
+        <quantity>3 kg</quantity>
+        <donor>Jane Smith</donor>
+    </food>
+    <food>
+        <name>Fruits</name>
+        <quantity>10 kg</quantity>
+        <donor>Community Group</donor>
+    </food>
+</foodCollection>

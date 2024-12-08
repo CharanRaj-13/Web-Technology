@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Change Color</title>
+    </head>
+    <body>
+        <h1 style="color: green; text-align: center;">Website</h1>
+        <p id="up"><b>Click the button below to change color</b></p>
+        <button onclick="run()">Click Here</button>
+        <p id="down"></p>
+
+        <script>
+            var el_down = document.getElementById("down");
+            function ChangeColor(color){
+                document.body.style.background = color;
+            }
+            function run(){
+                ChangeColor("yellow");
+                el_down.innerHTML = "Background Color Changed";
+            }
+        </script>
+    </body>
+</html>
